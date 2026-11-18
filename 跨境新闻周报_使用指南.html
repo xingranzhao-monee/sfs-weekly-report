@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>跨境金融新闻周报｜介绍、安装与使用</title>
+  <style>
+    :root{--ink:#252b32;--muted:#606a74;--orange:#e86b35;--dark:#bc4f24;--line:#e8e4df;--paper:#fff;--wash:#f7f6f4;--tint:#fff3eb}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--wash);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72}
+    a{color:var(--dark);text-underline-offset:3px}
+    a:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
+    .page{max-width:1040px;margin:auto;padding:28px 24px 64px}
+    .hero,.panel,.step,.notice{background:var(--paper);border:1px solid var(--line);border-radius:18px}
+    .hero{padding:39px 44px 37px;border-radius:25px;box-shadow:0 16px 40px rgba(30,30,30,.045)}
+    .kicker{color:var(--dark);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    h1{font-size:clamp(30px,4.8vw,46px);line-height:1.18;letter-spacing:-.045em;margin:10px 0 14px}
+    .lead{font-size:17px;color:#4c555e;max-width:790px;margin:0}
+    .toc{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+    .toc a{display:inline-block;border:1px solid #f0d6c6;background:var(--tint);border-radius:999px;padding:6px 13px;text-decoration:none;font-size:13px;font-weight:700}
+    .part{margin-top:43px}
+    .part-head{display:flex;align-items:flex-start;gap:15px;margin-bottom:16px}
+    .part-index{background:var(--orange);color:white;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:19px;font-weight:800;flex:none}
+    .part-head h2{font-size:27px;line-height:1.25;margin:0 0 3px;letter-spacing:-.03em}
+    .part-head p{color:var(--muted);font-size:14px;margin:0}
+    .panel{padding:24px 27px;margin:13px 0}
+    .panel h3,.step h3{font-size:19px;line-height:1.4;margin:0 0 10px}
+    .panel p,.step p{margin:0 0 10px}
+    .panel p:last-child,.step p:last-child{margin-bottom:0}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+    .grid .panel{margin:0}
+    .mini{color:var(--dark);font-size:12px;font-weight:800;letter-spacing:.06em;margin-bottom:5px}
+    .subtle{color:var(--muted)}
+    .sections{display:grid;gap:10px;margin-top:12px}
+    .sections div{padding:11px 14px;background:#fbfaf8;border:1px solid #eee9e4;border-radius:10px;font-size:14px}
+    .sections strong{color:var(--dark)}
+    .steps{display:grid;gap:14px}
+    .step{display:grid;grid-template-columns:45px minmax(0,1fr);gap:14px;padding:24px 27px}
+    .num{display:grid;place-items:center;width:37px;height:37px;border-radius:50%;background:var(--tint);color:var(--dark);font-size:17px;font-weight:800}
+    .step-body{min-width:0}
+    .step h3{margin-top:2px}
+    .chip{display:inline-block;color:var(--dark);background:var(--tint);border-radius:5px;padding:2px 7px;font-size:12px;font-weight:700}
+    .tree,.prompt{background:#f8f7f5;border:1px solid #e7e3df;border-radius:10px;padding:13px 15px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65;font-size:13px;margin:12px 0;color:#343a40}
+    .tree{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .prompt{font-family:inherit;color:#2f373e}
+    .prompt-label{font-size:13px;font-weight:800;color:var(--dark);margin:15px 0 5px}
+    .choice{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:13px 0}
+    .choice>div{border:1px solid var(--line);border-radius:12px;padding:17px 18px;background:#fdfcfb}
+    .choice h4{font-size:16px;margin:0 0 7px}
+    .choice p{font-size:14px;margin:0 0 8px}
+    .schedule{padding-left:22px;font-size:14px;margin:12px 0}
+    .schedule li+li{margin-top:6px}
+    .notice{padding:18px 21px;border-left:4px solid var(--orange);font-size:14px;color:#505962;margin-top:16px}
+    .notice strong{color:var(--ink)}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:7px 16px;margin:13px 0 0;padding:0;list-style:none}
+    .checks li{position:relative;padding-left:24px;font-size:14px}
+    .checks li:before{content:"✓";position:absolute;left:0;color:var(--dark);font-weight:800}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#f5f3f0;padding:1px 4px;border-radius:4px;font-size:.91em;overflow-wrap:anywhere}
+    footer{color:#818a92;text-align:center;font-size:12px;margin-top:30px}
+    @media(max-width:700px){.page{padding:14px 14px 43px}.hero{padding:27px 23px}.part{margin-top:33px}.panel{padding:20px}.step{grid-template-columns:34px minmax(0,1fr);gap:12px;padding:20px 17px}.num{width:31px;height:31px;font-size:14px}.grid,.checks{grid-template-columns:1fr}}
+    @media print{body{background:white}.page{max-width:none;padding:0}.hero,.panel,.step,.notice{box-shadow:none;break-inside:avoid}.toc{display:none}a{color:var(--ink)}footer{display:none}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="kicker">Shopee &amp; Monee · 团队交接说明</div>
+      <h1>跨境金融新闻周报</h1>
+      <p class="lead">这套 Skill 用于搜索、核查跨境金融新闻，制作供团队审核的中文 HTML 周报。下文介绍内容设计，以及如何在自己选定的本地项目中安装和使用。</p>
+      <nav class="toc" aria-label="本页目录"><a href="#about">第一部分 · Skill 与设计思路</a><a href="#use">第二部分 · 下载与使用</a></nav>
+    </header>
+
+    <section class="part" id="about" aria-labelledby="about-title">
+      <div class="part-head"><div class="part-index">一</div><div><h2 id="about-title">Skill 与周报设计</h2><p>研究什么、从哪里找、周报怎样呈现</p></div></div>
+
+      <div class="grid">
+        <article class="panel"><div class="mini">服务对象</div><h3>中国跨境卖家的金融服务</h3><p>面向 Shopee 同集团 Monee 的跨境商家金融团队，包括经营主体在海外、仍需人民币回款至中国大陆的卖家。</p></article>
+        <article class="panel"><div class="mini">交付结果</div><h3>一份可核查的周报</h3><p>默认统计北京时间最近一个完整自然周（周一至周日），生成带原文链接的 HTML 周报，并列出值得人工复核的候选。周报由人审核、发送。</p></article>
+      </div>
+
+      <div class="grid">
+        <article class="panel"><div class="mini">搜索覆盖</div><h3>关注内容</h3><p>以卖家回款、当地 PSP 合作、物流保险和退货退款保障为重点；同时搜索支付与外汇、平台结算、监管与牌照、反洗钱、欺诈风控及重要物流变化。优先关注东南亚、拉美，兼顾中国出口端和有参考价值的其他市场。</p></article>
+        <article class="panel"><div class="mini">来源与规则</div><h3>先广搜，再核实筛选</h3><p>从监管和政府原文、企业及平台公告、当地媒体、支付行业媒体、公开公众号等渠道找线索。规则依据团队业务重点及历次周报反馈制定：跨地区、主体、事件和语言搜索，核对原文、日期与事件阶段，再按业务关联和重要性筛选；不设固定篇数。</p></article>
+      </div>
+
+      <article class="panel"><h3>周报各部分的作用</h3>
+        <div class="sections">
+          <div><strong>本周启示：</strong>放在周报正文开头，提炼本周对业务影响较直接或较重要的新闻，并给出具体结论或值得留意的点。</div>
+          <div><strong>持续关注：</strong>只跟进团队点名的事件及其指定重点；经确认后手动加入关注清单，再搜索和更新背景、时间线。它排在“本周启示”之后。</div>
+          <div><strong>当周新闻：</strong>按实际事件类型分类，讲清主体、动作、条件和来源，不为凑栏目或篇数收录无关内容。</div>
+          <div><strong>监管动向：</strong>是重点关注项；有相关政策、牌照或执法新闻时独立成栏，并按现行版式排在其他新闻栏目之后。</div>
+        </div>
+      </article>
+
+      <article class="panel"><h3>为什么每天追踪、周一再汇总</h3><p>团队希望尽可能看见重要负面新闻。此类报道可能因公关处理被删除、修改，或后来变得难以检索；若只在周一集中搜索，就可能错过。每天搜索当天可见的消息，并及时留下日期、来源和简短事实，能提高发现并保留线索的机会。周一再补搜、核实和筛选，形成周报。无论手动还是定时使用，都按这个流程执行。</p></article>
+    </section>
+
+    <section class="part" id="use" aria-labelledby="use-title">
+      <div class="part-head"><div class="part-index">二</div><div><h2 id="use-title">下载与使用</h2><p>安装、出稿验证、选择运行方式、验收</p></div></div>
+      <div class="steps">
+        <article class="step"><div class="num">1</div><div class="step-body">
+          <h3>下载提供的 Skill 安装包</h3>
+          <p>下载随指南单独提供的 <strong>sfs-weekly-report-skill.zip</strong>。自己选定一个本地周报项目，在该项目的对话中让 AI 解压安装包并确认文件位置；不需要使用他人的个人目录。</p>
+          <div class="tree">你选定的周报项目/
+├─ .agents/skills/sfs-weekly-report/  ← Skill 全部文件
+├─ follow-ups.md                     ← 持续关注清单
+├─ daily/                            ← 每日记录
+└─ weekly/                           ← HTML 周报</div>
+          <p class="subtle">若项目已有 <code>follow-ups.md</code>，请先合并关注事项，不要直接覆盖。</p>
+        </div></article>
+
+        <article class="step"><div class="num">2</div><div class="step-body">
+          <h3>在该项目的新会话里验证</h3>
+          <p>在同一项目中新建对话，选择 <strong>@sfs-weekly-report</strong>（Codex 中可用 <strong>$sfs-weekly-report</strong>），直接让它生成上一个完整周或指定日期范围的 HTML 周报。</p>
+          <div class="prompt-label">可直接发送的验证指令</div>
+          <div class="prompt">请生成北京时间最近一个已结束自然周（周一至周日）的跨境金融新闻 HTML 周报，保存到本项目 weekly/，并告诉我文件位置。若我指定了其他日期范围，就按指定范围制作。</div>
+          <p class="subtle">这一步用成稿验证安装；正式使用仍需每天追踪、周一汇总。若 Skill 未出现，先检查安装位置和 <code>SKILL.md</code>。</p>
+        </div></article>
+
+        <article class="step"><div class="num">3</div><div class="step-body">
+          <h3>选择手动使用，或在桌面版设置定时任务</h3>
+          <p><strong>手动：</strong>每天（含周末）在项目对话中调用 Skill，要求“追踪今天的新闻并保存记录”；每周一再要求它根据每日记录和补搜结果制作上一个完整周的周报。</p>
+          <p><strong>定时：</strong>在 ChatGPT 桌面版打开<strong>“定时任务”→“新建任务”</strong>，依次设置两项任务：</p>
+          <ol class="schedule"><li>运行位置选择<strong>同一个本地周报项目</strong>，让两项任务都能读取 Skill 和项目文件。</li><li>第一项设为<strong>每天</strong>追踪（含周末），第二项设为<strong>每周一</strong>汇总。时间由自己选择；按北京时间 <code>Asia/Shanghai</code> 核对下一次运行时间，并确保届时电脑和桌面应用会运行。</li><li>模型建议选 <strong>GPT-6 Sol、高推理强度</strong>，或自己可用的更高能力模型。填写下方名称和提示词，保存并启用两项任务。</li></ol>
+          <div class="prompt-label">任务一｜名称：跨境金融新闻每日追踪｜频率：每天</div>
+          <div class="prompt">在当前本地周报项目调用 $sfs-weekly-report，每日追踪跨境金融新闻及 follow-ups.md 中的持续关注事件。按 Skill 规则核查并记录来源，将本次运行结果保存到本项目 daily/YYYY-MM-DD.jsonl；无新线索也写运行记录。回报实际文件位置和覆盖缺口。不要生成周报或发送邮件。</div>
+          <div class="prompt-label">任务二｜名称：跨境金融周报周一汇总｜频率：每周一</div>
+          <div class="prompt">在当前本地周报项目调用 $sfs-weekly-report，制作北京时间最近一个已结束自然周的 HTML 周报。读取本周 daily/ 记录和 follow-ups.md，补搜遗漏时段，重新核实来源，按 Skill 规则筛选；保存到本项目 weekly/，同名文件加版本号。回报实际文件位置、核查截止和缺口。不要发送邮件。</div>
+          <div class="notice"><strong>如果无法创建：</strong>如“新建任务”没有表单或出现报错，请明确记录“Skill 已可用，任务未创建”，继续手动使用；不要把云端任务当成本地任务。</div>
+        </div></article>
+
+        <article class="step"><div class="num">4</div><div class="step-body">
+          <h3>验收后交给团队使用</h3>
+          <ul class="checks"><li>新会话能调用 Skill，并生成内容完整、质量可用的 HTML 周报</li><li>打开周报，检查新闻事实和原文链接是否正确</li><li>如选择定时，确认两项任务已启用，并在实际运行后生成对应文件</li><li>人工审核、归档后，再发送给团队</li></ul>
+        </div></article>
+      </div>
+    </section>
+
+    <footer>跨境金融新闻周报 · 2026-11-18 · <a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noopener noreferrer">Skill 官方说明</a> · <a href="https://learn.chatgpt.com/docs/automations" target="_blank" rel="noopener noreferrer">定时任务官方说明</a></footer>
+  </main>
+</body>
+</html>
