@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>跨境金融新闻周报 2026.11.09—11.15 · 北京时间 | Shopee &amp; Monee</title>
+<style>
+  :root {
+    --orange: #F4743B; --orange-dk: #E05A26; --orange-lt: #FFF0E8; --orange-bg: #FFF7F2;
+    --white: #FFFFFF; --text: #1A1A1A; --text-secondary: #4A4F5A; --text-muted: #9499A3;
+    --border: #EAECEF; --blue: #3B6CF4; --green: #22B07D; --red: #E84A5F;
+    --shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    background:#F5F6F8; color:var(--text); line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .header { background:var(--white); border-bottom:1px solid var(--border); padding:28px 0 0; position:sticky; top:0; z-index:100; }
+  .header-top { max-width:1200px; margin:0 auto; padding:0 32px 20px; display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px; }
+  .header-brand { display:flex; align-items:baseline; gap:12px; margin-bottom:6px; }
+  .header-brand .logo { color:var(--orange); font-size:22px; font-weight:800; letter-spacing:-0.5px; }
+  .header h1 { font-size:26px; font-weight:700; letter-spacing:-0.3px; }
+  .header .meta { font-size:13px; color:var(--text-muted); margin-top:2px; }
+  .header .date-badge { display:inline-block; margin-top:8px; background:var(--orange-bg); color:var(--orange-dk); font-size:12px; font-weight:600; padding:4px 14px; border-radius:20px; }
+  .header-stats { display:flex; gap:20px; flex-wrap:wrap; }
+  .header-stat { text-align:center; min-width:50px; }
+  .header-stat .num { font-size:22px; font-weight:700; color:var(--orange); }
+  .header-stat .lbl { font-size:10px; color:var(--text-muted); }
+  .header-bar { background:var(--orange); padding:10px 32px; display:flex; justify-content:center; align-items:center; gap:8px; max-width:100%; overflow-x:auto; flex-wrap:wrap; }
+  .header-bar a { display:inline-block; color:var(--orange); text-decoration:none; font-size:12px; font-weight:600; white-space:nowrap; transition:all 0.2s; background:rgba(255,255,255,0.95); padding:6px 16px; border-radius:20px; }
+  .header-bar a:hover { background:#fff; color:var(--orange-dk); transform:translateY(-1px); box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  .container { max-width:1200px; margin:0 auto; padding:28px 24px 48px; }
+  .section-title { font-size:13px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:1.5px; margin:28px 0 12px; display:flex; align-items:center; gap:8px; }
+  .section-title::after { content:''; flex:1; height:1px; background:var(--border); }
+  .news-grid.single { grid-template-columns:1fr; }
+  .subsection-label { color:var(--text-muted); font-size:11px; font-weight:700; letter-spacing:.04em; margin:4px 0 10px; }
+  .insights-list { display:flex; flex-direction:column; gap:18px; margin-bottom:28px; }
+  .insight-card { display:flex; align-items:flex-start; gap:16px; padding:20px 22px; background:#FFF7F2; border-radius:10px; border-left:4px solid #F4743B; }
+  .insight-num { font-size:22px; min-width:30px; font-weight:800; color:#F4743B; }
+  .insight-title { font-weight:700; font-size:15px; color:#F4743B; margin-bottom:6px; }
+  .insight-body { font-size:14px; color:var(--text-secondary); line-height:1.8; }
+  .followup-list { display:flex; flex-direction:column; gap:16px; margin-bottom:28px; }
+  .followup-card { background:var(--white); border-radius:10px; box-shadow:var(--shadow); padding:20px 24px; }
+  .followup-head { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:6px 14px; margin-bottom:8px; }
+  .followup-title { font-size:15px; font-weight:700; line-height:1.5; }
+  .followup-updated { color:var(--text-muted); font-size:11px; white-space:nowrap; }
+  .followup-summary { color:var(--text-secondary); font-size:13.5px; line-height:1.8; margin-bottom:16px; }
+  .followup-focus { color:var(--orange-dk); background:var(--orange-bg); border-radius:6px; padding:8px 10px; font-size:12.5px; font-weight:600; margin-bottom:16px; }
+  .followup-timeline { list-style:none; border-left:2px solid var(--border); margin-left:7px; padding-left:18px; }
+  .followup-timeline li { position:relative; padding:0 0 18px; color:var(--text-secondary); font-size:13px; line-height:1.8; }
+  .followup-timeline li:last-child { padding-bottom:0; }
+  .followup-timeline li::before { content:''; position:absolute; left:-24px; top:7px; width:10px; height:10px; border-radius:50%; background:#CDD1D8; border:2px solid var(--white); }
+  .followup-timeline li.is-new::before { background:var(--orange); box-shadow:0 0 0 2px var(--orange-lt); top:15px; }
+  .followup-timeline li.is-new { background:var(--orange-bg); margin:0 0 12px; padding:8px 10px 10px; border-radius:6px; }
+  .followup-timeline li.is-new:last-child { margin-bottom:0; }
+  .followup-date { color:var(--text); font-weight:700; margin-right:8px; }
+  .followup-new-label { display:inline-block; background:var(--orange); color:var(--white); font-size:10px; font-weight:700; padding:1px 6px; border-radius:3px; margin-right:7px; }
+  .followup-timeline a { color:var(--orange-dk); text-decoration:none; font-weight:600; margin-left:7px; white-space:nowrap; }
+  .followup-timeline a:hover { text-decoration:underline; }
+  .nc-tag.accent-red { background:#FFF0F0; color:#B83A3A; }
+  .nc-footer { flex-wrap:wrap; gap:4px 12px; }
+  .news-card .nc-footer > span:first-child { flex:0 0 auto; max-width:100%; }
+  .nc-links { display:flex; flex:0 0 auto; flex-wrap:wrap; justify-content:flex-end; gap:2px 8px; max-width:100%; margin-left:auto; text-align:right; }
+  .news-card .nc-links a + a { margin-left:0; }
+  .news-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px; }
+  @media (max-width:860px) { .news-grid { grid-template-columns:1fr; } }
+  .news-card { background:var(--white); border-radius:10px; padding:0; box-shadow:var(--shadow); overflow:hidden; transition:box-shadow 0.2s; display:flex; flex-direction:column; }
+  .news-card:hover { box-shadow:0 2px 12px rgba(244,116,59,0.1); }
+  .news-card .nc-top { padding:18px 20px 0; flex-shrink:0; }
+  .news-card .nc-tag { display:inline-block; font-size:10px; font-weight:700; padding:3px 8px; border-radius:3px; margin-bottom:8px; }
+  .nc-tag.accent-blue { background:#EEF3FF; color:var(--blue); }
+  .nc-tag.accent-orange { background:#FFF0E8; color:var(--orange-dk); }
+  .news-card .nc-title { font-size:14px; font-weight:700; color:var(--text); line-height:1.5; margin-bottom:8px; }
+  .news-card .nc-summary { font-size:12.5px; color:var(--text-secondary); line-height:1.7; padding:0 20px 16px; flex:1; }
+  .news-card .nc-footer { padding:10px 16px; font-size:10.5px; color:var(--text-muted); border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; }
+  .news-card .nc-footer a { color:var(--orange); text-decoration:none; font-weight:600; }
+  .news-card .nc-footer a:hover { text-decoration:underline; }
+  .highlight-card { background:var(--white); border-radius:12px; box-shadow:var(--shadow); margin-bottom:14px; overflow:hidden; display:flex; border-left:5px solid var(--orange); }
+  @media (max-width:600px) { .highlight-card { flex-direction:column; } }
+  .highlight-card .hl-num { display:flex; align-items:center; justify-content:center; min-width:70px; font-size:32px; font-weight:800; color:var(--orange); background:var(--orange-bg); }
+  .highlight-card .hl-body { padding:18px 20px; flex:1; }
+  .highlight-card .hl-body .hl-title { font-size:15px; font-weight:700; color:var(--text); margin-bottom:6px; }
+  .highlight-card .hl-body .hl-meta { font-size:11px; color:var(--text-muted); margin-bottom:8px; }
+  .highlight-card .hl-body .hl-summary { font-size:13px; color:var(--text-secondary); line-height:1.7; margin-bottom:6px; }
+  .highlight-card .hl-body .hl-point { display:inline-block; background:var(--orange-bg); color:var(--orange-dk); font-size:11px; font-weight:600; padding:3px 10px; border-radius:20px; margin:3px 4px 0 0; }
+  .highlight-card .hl-body .hl-link { display:block; text-align:right; font-size:10px; margin-top:8px; }
+  .highlight-card .hl-body .hl-link a { color:var(--text-muted); text-decoration:none; transition:color 0.2s; }
+  .highlight-card .hl-body .hl-link a:hover { color:var(--orange); }
+  .footer { text-align:center; padding:16px; color:var(--text-muted); font-size:11px; max-width:1200px; margin:0 auto; }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+  .news-card, .highlight-card { animation:fadeUp 0.5s ease both; }
+
+  html { scroll-behavior: smooth; }
+  .header-bar a:focus-visible, .hl-link a:focus-visible, .nc-footer a:focus-visible, .followup-timeline a:focus-visible { outline: 2px solid #1A1A1A; outline-offset: 3px; }
+  .hl-meta .sep { color: #BEC2C9; margin: 0 6px; }
+  .sample-note { color: var(--text-muted); font-size: 11px; margin: 6px 0 14px; }
+  @media (max-width: 600px) {
+    .header { position: static; }
+    .header-top { padding: 0 18px 18px; }
+    .header-stats { gap: 14px; }
+    .container { padding: 18px 14px 36px; }
+    .header-bar { justify-content: flex-start; flex-wrap: nowrap; padding: 9px 14px; }
+    .highlight-card .hl-num { min-width: 100%; height: 42px; font-size: 22px; }
+    .followup-card { padding:17px 18px; }
+  }
+  @media print { .header { position: static; } .highlight-card, .news-card, .followup-card { animation: none; break-inside: avoid; } }
+
+  .hl-summary strong, .nc-summary strong { color:#272B34; }
+  .hl-link a + a, .nc-footer a + a { margin-left:12px; }
+  .nc-footer { gap:8px; flex-wrap:wrap; }
+  .nc-footer span { flex:1; min-width:170px; }
+</style>
+</head>
+<body>
+<header class="header"><div class="header-top"><div>
+<div class="header-brand"><span class="logo">Shopee &amp; Monee</span></div>
+<h1>跨境金融新闻周报</h1>
+<div class="meta" style="margin-top:4px;">本期关注：卖家保障 · 支付服务 · 监管动向</div>
+<div class="meta" style="margin-top:2px;">重点区域：东南亚 · 拉美；兼顾全球重要参考地区</div>
+<div class="date-badge">2026.11.09—11.15 · 北京时间</div>
+</div><div class="header-stats">
+<div class="header-stat"><div class="num">1</div><div class="lbl">持续关注</div></div><div class="header-stat"><div class="num">2</div><div class="lbl">卖家保障</div></div>
+<div class="header-stat"><div class="num">8</div><div class="lbl">支付服务</div></div>
+<div class="header-stat"><div class="num">2</div><div class="lbl">监管动向</div></div>
+<div class="header-stat"><div class="num">13</div><div class="lbl">总收录</div></div>
+</div></div><nav class="header-bar" aria-label="本页目录"><a href="#insights">💡 本周启示</a><a href="#follow-ups">🕒 持续关注</a>
+<a href="#seller-protection">🛡️ 卖家保障</a>
+<a href="#payment-services">💳 支付服务</a>
+<a href="#regulation">📋 监管动向</a>
+</nav></header><main class="container">
+<div class="section-title" id="insights"><span>💡 本周启示</span></div><div class="insights-list">
+<div class="insight-card"><span class="insight-num">1</span><div><div class="insight-title">TikTok Shop 马来西亚将部分买家原因退货双程运费转由卖家承担</div><div class="insight-body">平台11月12日公告，12月7日起对三类符合条件的买家原因退货，卖家承担正向及退货运费，并拟分阶段提供由 Igloo 提供、每单最高补偿80林吉特的自愿参加计划；具体费率和资格需在后台确认。对团队的卖家保障业务，这提示应逐项比较保障触发条件、未成功退回等除外责任和按正向订单收费的成本，而不能只看赔付上限。</div></div></div>
+<div class="insight-card"><span class="insight-num">2</span><div><div class="insight-title">BVNK 已把稳定币余额接到 11 种本地货币的银行付款</div><div class="insight-body">BVNK 11月11日宣布通过 Mastercard Move，将企业所持稳定币余额转换为法币并付至收款人本地银行账户，首批覆盖墨西哥、巴西、菲律宾等市场，尚不包括人民币。该能力可供平台付款场景使用，扩至40多种货币则是2027年计划。对中国卖家回款链路，可关注平台余额到当地银行这一环节的服务能力，同时单独核查最终人民币入境、主体资格和合规安排。</div></div></div>
+<div class="insight-card"><span class="insight-num">3</span><div><div class="insight-title">泰国跨境电商包裹关税调整获批，具体税率与生效日仍待公告</div><div class="insight-body">泰国内阁11月10日同意按商品税则对指定跨境电商快递和邮政包裹计征进口税，上限30%；财政部还需发布正式通知，刊登《皇家公报》满15天后才生效。此举可能改变在泰销售商品的含税价格、退货价值与保障赔付测算。团队可让当地伙伴核对税则、实际承担方和订单数据要求，暂不按“全部商品涨至30%”估算成本。</div></div></div>
+<div class="insight-card"><span class="insight-num">4</span><div><div class="insight-title">Xendit 印尼盾付款延迟显示合作银行故障可传导至出款</div><div class="insight-body">Xendit 状态页显示，11月13日晚至14日清晨的合作方系统问题造成部分印尼盾出款、汇款及托管交易处理延迟，平台已标记恢复，公开资料未披露影响笔数。若团队使用当地 PSP 承接卖家或商户资金，类似事件提示需核对目的银行覆盖、故障通知、在途订单对账和备用付款安排；本次不能推断已有 Shopee &amp; Monee 链路受影响。</div></div></div>
+</div>
+<div class="section-title" id="follow-ups"><span>🕒 持续关注</span></div>
+<div class="followup-list"><article class="followup-card">
+<div class="followup-head"><div class="followup-title">越南 Mr Pips 案：9Pay 的收款链路与调查状态</div><div class="followup-updated">截至2026年11月17日18:09（北京时间）核查</div></div>
+<div class="followup-summary">越南检方指控 Phó Đức Nam（Mr Pips）等人经营虚假的股票、外汇交易平台，诱导投资者向关联账户入金；庭审涉及通过公司账户和支付中介接收款项。9Pay 被被告、辩护律师和检方提及，调查重点是它在代收代付链路中的具体角色。被提及及列为后续核查对象，不等于已被起诉或认定违法。</div>
+<div class="followup-focus">关注重点：9Pay 在案中的资金流角色；针对 9Pay 的司法或监管调查阶段；9Pay 的回应和相关商户账户处置。</div>
+<ol class="followup-timeline"><li><span class="followup-date">10月31日庭审、11月2日报道</span>被告 Phó Đức Nam 称其团伙曾通过 Ngân Lượng、9Pay 等支付网关收取投资者入金；辩护律师请求法庭传唤包括 9Pay 在内的中介代表，以查清资金流。这些是庭审陈述和申请，尚非对 9Pay 的违法认定。<a href="https://baovephapluat.vn/phap-dinh/ky-an/mr-pips-nhac-ten-9pay-tai-phien-toa-luat-su-de-nghi-lam-ro-dong-tien-qua-cac-cong-thanh-toan-209410.html" target="_blank" rel="noopener noreferrer">越南检察报 →</a></li><li><span class="followup-date">11月4日</span>河内检方表示，受本阶段诉讼期限限制，拟在第二阶段继续核查 9Pay、BigPay、ApotaPay、CPay、HTP 等支付中介的活动。该表述意味着仍待调查；报道未显示五家机构已被起诉。<a href="https://vtcnews.vn/vu-mr-pips-tiep-tuc-dieu-tra-hoat-dong-5-cong-thanh-toan-va-hon-1-400-nguoi-ar1049287.html" target="_blank" rel="noopener noreferrer">VTC News →</a></li><li><span class="followup-date">11月6日报道及更新</span>9Pay 向 Fintech News 书面回应称，其风控发现异常交易后冻结并暂停了相关商户账户，主动向有关部门报告，并向调查和监管机构提供资料。账户处置与配合调查均为公司说法，尚无独立处置结论。<a href="https://fintechnews.sg/140658/vietnam/mr-pips-fraud-case-vietnam-payments/" target="_blank" rel="noopener noreferrer">9Pay回应 →</a></li><li><span class="followup-date">11月7日庭审及报道</span>越南法院报披露检方在主案中援引的证据：包括 9Pay 在内的三家支付中介，曾与若干个体经营者及六家公司签订代收代付合同，用于接收被害人款项；调查还发现相关主体与团伙人员账户有资金往来。报道未列出 9Pay 单独经手金额，也未认定其明知参与诈骗。<a href="https://congly.vn/vu-pho-duc-nam-lam-ro-mang-luoi-tai-khoan-ngan-hang-lien-quan-den-he-thong-36-san-giao-dich-546673.html" target="_blank" rel="noopener noreferrer">越南法院报 →</a></li><li class="is-new"><span class="followup-new-label">本周报道</span><span class="followup-date">11月9日</span>移动支付网报道此前庭审与检方第二阶段核查计划，并称“9Pay 至今未就案件公开发表评论”。该报道没有披露新的立案或处罚动作；其“未回应”说法与11月6日披露的9Pay书面回应不一致，应以后者确认的回应内容为准。<a href="https://www.mpaypass.com.cn/news/202611/09095334.html" target="_blank" rel="noopener noreferrer">中文报道 →</a></li></ol>
+<p class="followup-summary" style="margin:14px 0 0;">截至本期核查，11月9日至15日没有查到针对 9Pay 的新公开起诉、处罚或账户处置结论。11月9日中文报道属于旧庭审进展的本周报道，不能当作本周新调查动作；11月16日主案宣判在统计周之外，也不改变目前可确认的9Pay法律状态。</p>
+</article></div>
+<div class="section-title" id="seller-protection"><span>🛡️ 卖家保障</span></div>
+<article class="highlight-card"><div class="hl-num">1</div><div class="hl-body"><div class="hl-title">TikTok Shop 马来西亚调整买家原因退货运费责任，并提供可选补偿计划</div><div class="hl-meta">11月12日公告 · 12月7日生效 · 马来西亚 · TikTok Shop 卖家中心</div><div class="hl-summary">TikTok Shop 马来西亚站公告，自12月7日起，对符合条件的“改变主意、商品过大或过小、选错尺码”退货，卖家需承担发给买家的正向运费及退货运费；每位买家每月最多可按上述原因退货3次。正向运费按运费补贴券抵扣后计算，卖家原因退货的原有责任不变。平台同时计划分阶段提供由 Igloo 提供的自愿参加的 Return Shipping Fee Saver：按成功正向订单收取服务费，符合条件的双程运费每单最高补偿80林吉特；自行履约、商品未成功退回及买家自行安排退货等情形不在保障内，卖家须在后台确认自身资格和实际费率。</div><span class="hl-point">退货运费</span><span class="hl-link"><a href="https://seller-my.tiktok.com/university/essay?knowledge_id=4293090978809617&amp;lang=en" target="_blank" rel="noopener noreferrer">平台公告 →</a><a href="https://seller-my.tiktok.com/university/essay?from=feature_guide&amp;identity=1&amp;knowledge_id=3018975598184193&amp;role=1" target="_blank" rel="noopener noreferrer">计划条款 →</a></span></div></article>
+<div class="subsection-label">延伸动态</div><div class="news-grid">
+<article class="news-card"><div class="nc-top"><span class="nc-tag accent-blue">退货期限</span></div><div class="nc-title" style="padding:0 20px;">TikTok Shop 美国黑五订单延长退货期限至 2027 年 2 月 10 日</div><div class="nc-summary">TikTok Shop 美国站11月12日更新的黑五网一卖家指南规定，符合条件且在美国太平洋时间11月11日16:00至12月31日23:59售出的商品，买家可在2027年2月10日前退货。该旺季期限会覆盖卖家自行设置的退货窗口；部分电子产品、珠宝等类目仍按通常规则，拍卖订单不适用。平台还要求使用售后 API 的卖家延长系统和退货二维码有效期，并说明未按时处理售后请求可能导致平台自动支持买家。</div><div class="nc-footer"><span>11月12日 · 美国</span><span class="nc-links"><a href="https://seller-us.tiktok.com/university/essay?content_id=8146792370325290&amp;from=new-and-updated&amp;identity=2&amp;knowledge_id=26854147802894&amp;learning_id=26854147802894&amp;role=creator" target="_blank" rel="noopener noreferrer">平台指南 →</a></span></div></article>
+</div>
+<div class="section-title" id="payment-services"><span>💳 支付服务</span></div>
+<article class="highlight-card"><div class="hl-num">3</div><div class="hl-body"><div class="hl-title">BVNK 接入 Mastercard Move，推出稳定币余额转本地银行账户付款</div><div class="hl-meta">11月11日 · 拉美等11个币种市场 · BVNK</div><div class="hl-summary">BVNK 宣布通过 Mastercard Move，让企业从其平台所持稳定币余额发起付款，由 BVNK 转换为法币，再经本地支付网络进入收款人的国内银行账户；客户可通过 API 或商户后台发起。首批覆盖11种货币，其中拉美包括墨西哥、巴西、阿根廷、哥伦比亚和智利，亚太包括菲律宾和韩国。BVNK 称此能力也可嵌入平台用于向供应商或创作者付款；推卡和电子钱包收款端仍属未来扩展，2027年拓至40多种货币是计划，目前首批不含人民币。</div><span class="hl-point">本地付款</span><span class="hl-link"><a href="https://www.bvnk.com/br-pt/blog/pay-out-to-local-bank-accounts-from-stablecoin-balances-on-bvnk" target="_blank" rel="noopener noreferrer">企业产品公告 →</a><a href="https://thepaypers.com/crypto-web3-and-cbdc/news/bvnk-launches-stablecoin-to-bank-payouts-via-mastercard-move" target="_blank" rel="noopener noreferrer">行业报道 →</a></span></div></article>
+<article class="highlight-card"><div class="hl-num">4</div><div class="hl-body"><div class="hl-title">Omise 在泰国成为 Visa 与 Mastercard 直接收单机构</div><div class="hl-meta">11月9日 · 泰国 · Omise</div><div class="hl-summary">Omise 11月9日宣布在泰国成为 Visa 和 Mastercard 的直接收单机构，能够在自身基础设施中处理更多银行卡收单与结算环节。公司称，这将减少对中间机构的依赖，并为商户、平台及金融机构提供更完整的支付能力；商户开户、授权、对账和风控等改善属于其后续建设方向。公告提及的收单即服务、支付促成及编排是未来产品方向，未公布上线时间或可验证的商户费率和到账速度变化。</div><span class="hl-point">当地收单</span><span class="hl-link"><a href="https://omise.co/en/post/omise-direct-acquirer-for-visa-and-mastercard-thailand" target="_blank" rel="noopener noreferrer">企业公告 →</a><a href="https://thepaypers.com/payments/news/omise-becomes-direct-visa-and-mastercard-acquirer-in-thailand" target="_blank" rel="noopener noreferrer">行业报道 →</a></span></div></article>
+<article class="highlight-card"><div class="hl-num">5</div><div class="hl-body"><div class="hl-title">工行安徽落地中墨、中泰“数币达”跨境支付实单</div><div class="hl-meta">11月14日报道 · 交易日未披露 · 中国／墨西哥／泰国 · 人民网安徽频道</div><div class="hl-summary">工行安徽省分行与工银墨西哥、工银泰国协同，依托数字人民币跨境结算综合服务平台“数币达”（CBETS），接连完成全国首笔中墨、安徽省首笔中泰跨境支付。中墨案例用于安徽汽车企业墨西哥子公司付款，中泰案例用于企业采购及运费支付。报道强调收付款行点对点结算和线上办理，但未披露金额、交易日或向一般跨境卖家开放的条件，不能据此推断所有商户已经可用。</div><span class="hl-point">企业跨境结算</span><span class="hl-link"><a href="https://ah.people.com.cn/n2/2026/1114/c401605-41750868.html" target="_blank" rel="noopener noreferrer">原报道 →</a></span></div></article>
+<div class="subsection-label">延伸动态</div><div class="news-grid">
+<article class="news-card"><div class="nc-top"><span class="nc-tag accent-blue">本地收款</span></div><div class="nc-title" style="padding:0 20px;">RHB PAY 在马来西亚加入 DuitNow Pay 一次性与定期收款</div><div class="nc-summary">RHB 银行宣布，商户可经 RHB PAY 接入 PayNet 的 DuitNow Pay，同时接受银行账户或电子钱包的一次性线上付款，以及获得顾客授权后的定期自动扣款。该能力通过现有网关整合卡、FPX 等收款方式，并提供交易对账；RHB 官网注明结算速度取决于支付方式。此项更新针对马来西亚本地商户收单，并非跨境卖家人民币回款服务。</div><div class="nc-footer"><span>11月12日 · 马来西亚</span><span class="nc-links"><a href="https://www.rhbgroup.com/rhbpay/index.html" target="_blank" rel="noopener noreferrer">银行产品页 →</a><a href="https://fintechnews.my/62350/banking/rhb-duitnow-pay/" target="_blank" rel="noopener noreferrer">当地报道 →</a></span></div></article>
+<article class="news-card"><div class="nc-top"><span class="nc-tag accent-blue">本地支付</span></div><div class="nc-title" style="padding:0 20px;">dLocal 为 Decathlon 墨西哥站接入 Kueski Pay 分期付款</div><div class="nc-summary">据 The Paypers 报道，dLocal 已为 Decathlon 墨西哥消费者开通 Kueski Pay，赶在当地 El Buen Fin 购物季前上线。顾客可不依赖信用卡，在结账时选择分期付款；商户侧通过 dLocal 的 BNPL Fuse 接入本地先买后付提供方，由 dLocal 处理当地许可、合规和结算。报道描述的是一家商户的收款接入，不代表 Kueski Pay 已自动向所有跨境商户开放，也不涉及商家向中国回款。</div><div class="nc-footer"><span>11月13日报道 · 墨西哥</span><span class="nc-links"><a href="https://thepaypers.com/payments/news/dlocal-brings-kueski-pay-bnpl-to-decathlon-shoppers-in-mexico" target="_blank" rel="noopener noreferrer">行业报道 →</a><a href="https://www.dlocal.com/es/payment-method/kueski-payment/" target="_blank" rel="noopener noreferrer">支付方式说明 →</a></span></div></article>
+<article class="news-card"><div class="nc-top"><span class="nc-tag accent-blue">服务事故</span></div><div class="nc-title" style="padding:0 20px;">Xendit 印尼盾付款通道出现跨夜延迟，随后恢复</div><div class="nc-summary">Xendit 状态页记录，印尼当地时间11月13日23:30起，因合作方系统问题，若干印尼盾目的银行的 Payouts、Disbursements、Remittance 和 Escrow 交易处理延迟；受影响银行及金额区间在事故期间多次变化。平台于11月14日05:20（印尼西部时间，约北京时间06:20）标记事故解决。公开状态页未披露受影响笔数、延迟时长分布或是否涉及特定跨境卖家资金，不能据此推定所有印尼出款均中断。</div><div class="nc-footer"><span>11月14日（北京时间） · 印度尼西亚</span><span class="nc-links"><a href="https://status.xendit.co/" target="_blank" rel="noopener noreferrer">官方状态页 →</a><a href="https://isdown.app/status/xendit/incidents/686702-payouts-disruption-in-indonesia" target="_blank" rel="noopener noreferrer">事故存档 →</a></span></div></article>
+<article class="news-card"><div class="nc-top"><span class="nc-tag accent-blue">结算试验</span></div><div class="nc-title" style="padding:0 20px;">英、新、泰央行公布同步外汇结算试验结果</div><div class="nc-summary">英国央行、金管局和泰国央行公布 Project Meridian FX APAC 结果：在三家央行的测试环境中，协调不同批发结算系统完成付款对付款（PvP）外汇结算，并试验多边净额结算。试验涉及传统实时全额结算与分布式账本环境，表明技术上可行，同时列出法律、运营和监管问题。项目仍是测试，未建立面向商家或 PSP 的正式跨境支付通道；英国央行提出的2028年同步接口也尚非本项目服务上线日期。</div><div class="nc-footer"><span>11月13日 · 英国 · 新加坡 · 泰国</span><span class="nc-links"><a href="https://www.bankofengland.co.uk/news/2026/november/the-boe-monetary-authority-of-singapore-and-bank-of-thailand-media-release" target="_blank" rel="noopener noreferrer">央行公告 →</a><a href="https://www.bankofengland.co.uk/payments/payments-innovation/wholesale-experiments-programme/project-meridian-fx-apac-technical-report" target="_blank" rel="noopener noreferrer">技术报告 →</a></span></div></article>
+<article class="news-card"><div class="nc-top"><span class="nc-tag accent-blue">PSP扩张</span></div><div class="nc-title" style="padding:0 20px;">Airwallex 拟五年内在新加坡投资逾20亿新元，扩充区域总部</div><div class="nc-summary">Airwallex 11月11日在启用新加坡扩建办公室时宣布，计划未来五年在当地投资超过20亿新元，并将员工人数从约750人增至超过1000人。公司称，投入将用于产品创新、工程和人工智能能力，以及区域和全球运营；新加坡与旧金山同为其全球总部。CNA 报道称，新加坡业务2026年上半年收入和交易量均同比增长约90%，该数据为公司披露。本次是未来支出和扩张计划，不是本周新一轮对外融资；公告亦未明确新增商户支付通道或人民币回款产品的上线时间。</div><div class="nc-footer"><span>11月11日 · 新加坡</span><span class="nc-links"><a href="https://www.channelnewsasia.com/singapore/airwallex-new-office-fintech-investment-jobs-6541721" target="_blank" rel="noopener noreferrer">当地报道 →</a></span></div></article>
+</div>
+<div class="section-title" id="regulation"><span>📋 监管动向</span></div>
+<article class="highlight-card"><div class="hl-num">11</div><div class="hl-body"><div class="hl-title">泰国内阁批准调整跨境电商包裹进口税，税率依品类最高30%</div><div class="hl-meta">11月10日 · 泰国 · 泰国政府</div><div class="hl-summary">泰国内阁11月10日批准调整从境外电商平台购买、经快递或国际邮政进入泰国的商品进口税计收办法。政府称将按商品对应税则征税，上限30%，并与电商平台对接订单数据辅助申报；这不表示所有商品一律按30%征税。财政部仍须起草并公布正式通知，政府公告写明措施将在《皇家公报》刊登后满15天生效。因此截至本期核查时，该调整仍处于已获内阁批准、尚待正式规则与生效日期的阶段。</div><span class="hl-point">待正式实施</span><span class="hl-link"><a href="https://www.thaigov.go.th/th/news/171055" target="_blank" rel="noopener noreferrer">政府公告 →</a><a href="https://www.nationthailand.com/business/economy/40073398" target="_blank" rel="noopener noreferrer">当地报道 →</a></span></div></article>
+<div class="subsection-label">延伸动态</div><div class="news-grid">
+<article class="news-card"><div class="nc-top"><span class="nc-tag accent-blue">合作框架</span></div><div class="nc-title" style="padding:0 20px;">马、印、泰、菲四家央行签署本币交易框架合作备忘录</div><div class="nc-summary">马来西亚国家银行、印尼央行、泰国央行及菲律宾央行11月13日签署本币交易框架合作备忘录，推动参与经济体之间符合条件的贸易、投资等双边交易使用当地货币结算。新文件取代马、印、泰三方2023年分别签署的相关双边备忘录，并将菲律宾纳入四方合作。央行表示将继续推进框架开发和实施；公告未列出新开通的具体支付走廊、商家准入条件或确定的费用节省幅度。</div><div class="nc-footer"><span>11月13日 · 东南亚</span><span class="nc-links"><a href="https://amlcft.bnm.gov.my/web/guest/-/mou_lctf26" target="_blank" rel="noopener noreferrer">央行公告 →</a></span></div></article>
+</div>
+</main>
+<div class="footer">跨境金融新闻周报 · 仅供团队内部参考 · 统计范围：2026年11月9日至15日（北京时间） · 内容截至2026年11月17日18:09（北京时间）核查</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.header-bar a').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (!target) return;
+      const header = document.querySelector('.header');
+      const top = target.getBoundingClientRect().top + window.scrollY - (header ? header.offsetHeight : 0) - 8;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+});
+</script>
+</body>
+</html>
